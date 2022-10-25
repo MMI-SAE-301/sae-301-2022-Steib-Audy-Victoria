@@ -5,7 +5,7 @@ import BtnInscription from '@/components/btnInscription.vue';
 
 </script>
 <template>
-    <div class="flex justify-around my-20 ">
+    <div class="flex justify-evenly my-20 ">
         <div>
             <div class="my-2 flex flex-col">
                 <label for="email">ADRESSE EMAIL :</label>
