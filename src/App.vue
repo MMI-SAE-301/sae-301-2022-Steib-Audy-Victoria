@@ -7,7 +7,7 @@
       <div>
         <router-link class="mx-5 font-MerriweatherSans text-2xl" to="/">Nos modèles</router-link>
         <router-link class="mx-5 font-MerriweatherSans text-2xl" to="/">Personnaliser</router-link>
-        <router-link class="mx-5 font-MerriweatherSans text-2xl border border-black rounded-md p-2" to="/">Connexion</router-link>
+        <router-link class="mx-5 font-MerriweatherSans text-2xl border border-black rounded-md p-2" to="/connexion">Connexion</router-link>
       </div>
     </nav>
     <hr class="border-black border-2 mx-7">
