@@ -1,23 +1,28 @@
 <template>
-  <nav>
-    <h4 class="text-xl">
-      <Bars3Icon class="inline-block h-5 w-5 text-blue-500" />
-      menu (dans <code class="font-mono">/src/App.vue</code>)
-    </h4>
-    <ul>
-      <li>
-        <router-link class="text-red-600 underline" to="/">
-          lien vers
-          <code class="font-mono">/src/pages/index.vue</code>
-        </router-link>
-      </li>
-    </ul>
-  </nav>
+  <header>
+    <nav class="flex justify-between my-6">
+      <div>
+        <router-link to="/"><h1 class="font-Merriweather font-bold text-5xl ml-4">TiK•TaK</h1></router-link>
+      </div>
+      <div>
+        <router-link class="mx-5 font-MerriweatherSans text-3xl" to="/">Nos modèles</router-link>
+        <router-link class="mx-5 font-MerriweatherSans text-3xl" to="/">Personnaliser</router-link>
+        <router-link class="mx-5 font-MerriweatherSans text-3xl border border-black rounded-md p-2" to="/">Connexion</router-link>
+      </div>
+    </nav>
+    <hr class="border-black border-2 mx-7">
+  </header>
 
   <!-- Affiche les pages -->
-  <Suspense>
-    <router-view class="m-2 border-2 p-2" />
-  </Suspense>
+  <main>
+    <Suspense>
+      <router-view class="m-2 border-2 p-2" />
+    </Suspense>
+  </main>
+
+  <footer>
+
+  </footer>
 </template>
 
 <script setup lang="ts">
