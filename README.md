@@ -3,7 +3,7 @@
 - **Nom : Steib--Audy**
 - **Prénom : Victoria**
 - **URL maquette Figma: https://www.figma.com/file/uimP2loQtZpg2Lis1T9z7W/SAE-301?node-id=6%3A43**
-- **URL publique du site :**
+- **URL publique du site : https://dazzling-cuchufli-2d80c0.netlify.app**
 - **URL projet Supabase : https://udwvwkwyjocruqjlcwth.supabase.co**
   - [x] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
 
