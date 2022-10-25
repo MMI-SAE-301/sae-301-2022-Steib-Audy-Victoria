@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import BtnPersonnalisation from '@/components/btnPersonnalisation.vue';
-
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/vue/20/solid";
 
 </script>
 <template>
+  <!-- Section 1 -->
   <section>
     <div class="flex">
       <div class="flex flex-col place-content-center m-4">
@@ -22,5 +23,18 @@ import BtnPersonnalisation from '@/components/btnPersonnalisation.vue';
     <div class="flex justify-center">
       <BtnPersonnalisation></BtnPersonnalisation>
     </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="bg-GrisMoyen py-4">
+    <h4 class="text-white text-center text-lg">Vos personnalisation</h4>
+    <div class="flex justify-center">
+      <ChevronLeftIcon class="w-10 text-white"></ChevronLeftIcon>
+      <div>
+
+      </div>
+      <ChevronRightIcon class="w-10 text-white"></ChevronRightIcon>
+    </div>
+    <a class="text-white text-center underline text-lg" href=""><p>Voir plus de mes personnalisations</p></a>
   </section>
 </template>
