@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import BtnPersonnalisation from '@/components/btnPersonnalisation.vue';
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/vue/20/solid";
+import ListeMontre from '@/components/ListeMontre.vue';
 
 </script>
 <template>
@@ -31,7 +32,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/vue/20/solid";
     <div class="flex justify-center">
       <ChevronLeftIcon class="w-10 text-white"></ChevronLeftIcon>
       <div>
-
+        <ListeMontre class="flex flex-wrap gap-2" :max="2" />
       </div>
       <ChevronRightIcon class="w-10 text-white"></ChevronRightIcon>
     </div>

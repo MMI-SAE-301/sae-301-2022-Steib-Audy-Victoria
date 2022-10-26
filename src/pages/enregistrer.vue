@@ -1,11 +1,10 @@
 <script setup lang="ts">
 
-import montreCarree from "@/components/montreCarree.vue"
 
 </script>
 
 <template >
-    <div class="bg-GrisMoyen">
-        <montreCarree></montreCarree>
+    <div class="bg-GrisMoyen grid grid-cols-3">
+        
     </div>
 </template>
