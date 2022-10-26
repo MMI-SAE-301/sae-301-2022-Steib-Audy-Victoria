@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import BtnConnexion from '@/components/btnConnexion.vue';
 import BtnInscription from '@/components/btnInscription.vue';
-
+import { supabase, user } from '../supabase';
 
 </script>
 <template>
@@ -22,8 +22,8 @@ import BtnInscription from '@/components/btnInscription.vue';
         </div>
         <hr class="border-black border-l h-auto">
         <div class="my-10">
-            <button class="flex border border-black place-items-center rounded-md p-2 my-3 w-96">
-                <span class="font-MerriweatherSans font-thin px-14">Se connecter via Google</span>
+            <button class="flex border border-black place-items-center rounded-md p-2 my-3 w-96" @pointerdown="supabase.auth.signIn({ provider: 'google' })">
+                <span class="font-MerriweatherSans font-thin px-14" >Se connecter via Google</span>
                 <img class="w-8" src="/public/Google.png" alt="Logo de Google">
             </button>
             <button class="flex border border-black place-items-center rounded-md p-2 my-3 w-96">
