@@ -22,7 +22,7 @@ if (props.id) {
     let { data, error } = await supabase
         .from("Montre")
         .select("*")
-        .eq("Id_Montre", props.id);
+        .eq("Id", props.id);
     if (error || !data)
         console.log("n'a pas pu charger le table Montre :", error);
     else montre.value = data[0];
