@@ -5,7 +5,12 @@ import { supabase, user } from '../supabase';
 
 </script>
 <template>
-    <div class="flex justify-evenly my-20 ">
+    <div v-if="user">
+                <button @pointerdown="supabase.auth.signOut()">
+                    Se déconnecter ({{user.email}})
+                </button>
+    </div>
+    <div v-else class="flex justify-evenly my-20 ">
         <div>
             <div class="my-2 flex flex-col">
                 <label for="email">ADRESSE EMAIL :</label>
