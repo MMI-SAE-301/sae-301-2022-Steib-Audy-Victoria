@@ -17,7 +17,7 @@ if (error) {
     <ul>
         <li v-for="Montre in montres" :key="Montre.Id">
             <router-link :to="{ name: 'montre-edit-id', params: { id: Montre.Id } }">
-                <montreCarree class="w-64" v-bind="Montre" />
+                <montreCarree v-bind="Montre" />
             </router-link>
         </li>
     </ul>
