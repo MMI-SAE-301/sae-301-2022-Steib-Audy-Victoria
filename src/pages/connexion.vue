@@ -5,7 +5,7 @@ import { supabase, user } from '../supabase';
 
 </script>
 <template>
-    <div v-if="user">
+    <div v-if="user" class="flex justify-center">
                 <button @pointerdown="supabase.auth.signOut()">
                     Se déconnecter ({{user.email}})
                 </button>
