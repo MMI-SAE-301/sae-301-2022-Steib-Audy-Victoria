@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import montreCarree from "@/components/montreCarree.vue"
-import montreRonde from "@/components/montreRonde.vue"
-import type { Montre } from '@/types';
-import { colors } from '@/types';
+
 </script>
 <template>
     <section class="grid grid-cols-2">
@@ -10,7 +7,7 @@ import { colors } from '@/types';
             <div class="bg-gradient-to-t from-Bordeaux to-transparent rounded-lg m-2">
                 <div class="bg-gradient-to-b from-white to-transparent rounded-lg  flex flex-col ">
                     <div class="flex justify-center">
-                        <montreCarree ></montreCarree>
+                        <img src="/public/MontreCarree.svg" alt="Image de la Montre avec le boitier carré à personnaliser">
                     </div>
                     <h6 class="font-Merriweather text-2xl text-white text-center m-2">550€</h6>
                     <p class="text-2xl text-Doré text-center m-2">Modèle le plus populaire</p>
@@ -21,7 +18,7 @@ import { colors } from '@/types';
             <div class="bg-gradient-to-t from-Bordeaux to-transparent rounded-lg  m-2">
                 <div class="bg-gradient-to-b from-white to-transparent rounded-lg  flex flex-col">
                     <div class="flex justify-center">
-                        <montreRonde></montreRonde>
+                        <img src="/public/MontreRonde.svg" alt="Image de la Montre avec le boitier rond à personnaliser">
                     </div>
                     <h6 class="font-Merriweather text-2xl text-white text-center m-2">550€</h6>
                     
