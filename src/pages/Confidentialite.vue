@@ -1,5 +1,5 @@
 <template>
-    <span>
+    <p>
         Dans le cadre de son activité de XXXX, la Société XXXX, représentée par XXXX, est amenée à collecter et traiter les
         données personnelles de ses visiteurs. Les activités pour lesquelles la société est amené à traiter des données
         sensibles sont les suivantes :
@@ -156,5 +156,5 @@
         Pour finir, Sendinblue travaille avec un cabinet de conseil spécialisé en cyber-sécurité qui les a complimentés sur la
         difficulté d’intrusion de leurs systèmes.
 
-    </span>
+    </p>
 </template>
