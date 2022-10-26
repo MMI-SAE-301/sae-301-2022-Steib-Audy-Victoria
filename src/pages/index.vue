@@ -2,7 +2,9 @@
 import BtnPersonnalisation from '@/components/btnPersonnalisation.vue';
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/vue/20/solid";
 import ListeMontre from '@/components/ListeMontre.vue';
+import { supabase } from "@/supabase";
 
+const user = supabase.auth.user()
 </script>
 <template>
   <!-- Section 1 -->
@@ -27,7 +29,7 @@ import ListeMontre from '@/components/ListeMontre.vue';
   </section>
 
   <!-- Section 2 -->
-  <section class="bg-GrisMoyen py-4">
+  <section v-if="user" class="bg-GrisMoyen py-4">
     <h4 class="text-white font-MerriweatherSans text-center text-lg">Vos personnalisation</h4>
     <div class="flex justify-center">
       <ChevronLeftIcon class="w-10 text-white"></ChevronLeftIcon>
