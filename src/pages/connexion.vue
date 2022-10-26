@@ -26,7 +26,7 @@ import { supabase, user } from '../supabase';
                 <span class="font-MerriweatherSans font-thin px-14" >Se connecter via Google</span>
                 <img class="w-8" src="/public/Google.png" alt="Logo de Google">
             </button>
-            <button class="flex border border-black place-items-center rounded-md p-2 my-3 w-96">
+            <button class="flex border border-black place-items-center rounded-md p-2 my-3 w-96" @pointerdown="supabase.auth.signIn({ provider: 'facebook' })">
                 <span class="font-MerriweatherSans font-thin px-14">Se connecter via Facebook</span>
                 <img class="w-8" src="/public/facebook.png" alt="Logo de Facebook">
             </button>
