@@ -2,12 +2,13 @@
 import type { Montre } from '@/types';
 import { colors } from '@/types';
 import { ref } from 'vue';
-import { supabase } from "../supabase";
+import { supabase } from "@/supabase";
 
 import montreCarree from "@/components/montreCarree.vue"
 import FormKitListColors from './FormKitListColors.vue';
 
 import { useRouter } from "vue-router";
+import type { FormKitNode } from '@formkit/core';
 const router = useRouter();
 
 const props = defineProps<{
@@ -28,9 +29,10 @@ if (props.id) {
     else montre.value = data[0];
 }
 
+// @ts-ignore
 async function upsertMontre(dataForm, node) {
     const { data, error } = await supabase.from("Montre").upsert(dataForm);
-    if (error) node.setErrors([error.message]);
+    if (error || !data) node.setErrors([error.message]);
     else {
         node.setErrors([]);
         router.push({ name: "montre-edit-id", params: { id: data[0].id } });
