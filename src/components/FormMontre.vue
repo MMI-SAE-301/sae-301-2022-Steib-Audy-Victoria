@@ -32,7 +32,7 @@ if (props.id) {
 // @ts-ignore
 async function upsertMontre(dataForm, node) {
     const { data, error } = await supabase.from("Montre").upsert(dataForm);
-    if (error || !data) node.setErrors([error.message]);
+    if (error || !data) node.setErrors([error?.message]);
     else {
         node.setErrors([]);
         router.push({ name: "montre-edit-id", params: { id: data[0].id } });
