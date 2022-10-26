@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import montreCarree from "@/components/montreCarree.vue"
 import montreRonde from "@/components/montreRonde.vue"
+import type { Montre } from '@/types';
+import { colors } from '@/types';
 </script>
 <template>
     <section class="grid grid-cols-2">
