@@ -31,9 +31,9 @@ Noté sur 40.
 - Code et Commit (0-2-4-6pts)
 - Code HTML spécifiquement sémantique et accessible (0-1-2pts)
 
-- [ ] usage de Classes utilitaires (1pt)
-  - lien vers sa définition
-  - lien vers son usage
+- [x] usage de Classes utilitaires (1pt)
+  - https://tailwindcss.com/docs/adding-custom-styles#adding-custom-utilities
+  - /src/index.css#L5
 - [ ] Composants graphiques (0-1-2pts)
   - liens
 - Technique CSS (0-1-2pts)
