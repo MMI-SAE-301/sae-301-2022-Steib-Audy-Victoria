@@ -9,7 +9,7 @@ const user = supabase.auth.user()
 <template>
   <!-- Section 1 -->
   <section>
-    <div class="flex">
+    <div class="grid grid-cols-2">
       <div class="flex flex-col place-content-center m-4">
         <h3 class="font-MerriweatherSans text-xl text-center mb-8">Grâce à <span class="font-Merriweather font-bold">TiK•TaK</span> personnaliser votre montre connectée !</h3>
         <p >
@@ -21,7 +21,9 @@ const user = supabase.auth.user()
           Elle vous accompagnera partout grâce à son design sobre et élégant !
         </p>
       </div>
+      <div>
       <img src="/public/MontreNoir.webp" alt="Montre">
+      </div>
     </div>
     <div class="flex justify-center">
       <BtnPersonnalisation></BtnPersonnalisation>
@@ -31,7 +33,7 @@ const user = supabase.auth.user()
   <!-- Section 2 -->
   <section v-if="user" class="bg-GrisMoyen py-4">
     <h4 class="text-white font-MerriweatherSans text-center text-lg">Vos personnalisation</h4>
-    <div class="flex justify-center">
+    <div class="flex justify-around">
       <ChevronLeftIcon class="w-10 text-white"></ChevronLeftIcon>
       <div>
         <ListeMontre class="flex flex-wrap gap-2" :max="2" />
@@ -43,7 +45,7 @@ const user = supabase.auth.user()
 
   <!-- Section 3 -->
   <section>
-    <div class="flex">
+    <div class="grid grid-cols-2">
       <div>
         <img src="/public/MontreBeige.webp" alt="Montre">
       </div>
