@@ -1,26 +1,30 @@
 <template>
-  <div :class="isDark ? 'dark' : ''">
-  <header>
-    <nav class="flex justify-between my-6">
+  <div  :class="!isDark ? 'dark' : ''" >
+  <header class="dark:bg-black py-6">
+    <nav class="flex justify-between pb-2">
       <div>
-        <router-link to="/"><h1 class="font-Merriweather font-bold text-4xl ml-4">TiK•TaK</h1></router-link>
+        <router-link to="/"><h1 class="font-Merriweather font-bold text-4xl ml-4 dark:text-white">TiK•TaK</h1></router-link>
       </div>
-      <div>
-        <router-link class="mx-5 font-MerriweatherSans text-2xl" to="/modeles">Nos modèles</router-link>
-        <router-link class="mx-5 font-MerriweatherSans text-2xl" to="/personnaliser">Personnaliser</router-link>
-        <router-link class="mx-5 font-MerriweatherSans text-2xl border border-black rounded-md p-2" to="/connexion">Connexion</router-link>
-      </div>
-    </nav>
-    <hr class="border-black border-2 mx-7">
-      <div class=" gap-3 flex  items-center">
+      <!--Bouton Darkmode-->
+      <div class=" gap-3 flex items-center">
         <p class="hidden sm:flex text-lg dark:text-white duration-700">Dark Mode</p>
         <!-- Début Bouton Switch -->
         <label class="switch relative dark:border-transparent dark:hover:border-white border-2 rounded-full duration-700">
-          <input type="checkbox" checked @click="isDark = !isDark">
-          <span class="slider round bg-white before:bg-[#222] dark:before:bg-white"></span>
+          <input type="checkbox"  @click="isDark = !isDark">
+          <span class="slider round bg-white before:bg-[#222] dark:before:bg-GrisMoyen"></span>
         </label>
         <!-- Fin Bouton Switch -->
       </div>
+      <!--Fin du bouton darkmode-->
+      <div class="dark:text-white">
+        <router-link class="mx-5 font-MerriweatherSans text-2xl" to="/modeles">Nos modèles</router-link>
+        <router-link class="mx-5 font-MerriweatherSans text-2xl" to="/personnaliser">Personnaliser</router-link>
+        <router-link class="mx-5 font-MerriweatherSans text-2xl border border-black dark:border-white rounded-md p-2" to="/connexion">Connexion</router-link>
+      </div>
+    </nav>
+
+    <hr class="border-black border-2 mx-7 dark:border-white">
+
   </header>
 
 
@@ -31,23 +35,23 @@
     </Suspense>
   </main>
 
-  <footer class="bg-GrisClair bg-[url('/public/LineFooter.svg')] p-10">
-    <nav class="grid">
-      <router-link class=" font-MerriweatherSans text-lg border-l-black border-l-2 p-2 mb-5" to="/connexion">Connexion</router-link>
-      <router-link class=" font-MerriweatherSans text-lg border-l-black border-l-2 p-2 mb-5" to="/modeles">Nos modèles</router-link>
-      <router-link class=" font-MerriweatherSans text-lg border-l-black border-l-2 p-2 mb-5" to="/">Personnaliser</router-link>
-      <router-link class=" font-MerriweatherSans text-lg border-l-black border-l-2 p-2 mb-5" to="/enregistrer">Mes enregistrements</router-link>
-      <router-link class=" font-MerriweatherSans text-lg border-l-black border-l-2 p-2 mb-5" to="/">Mon compte</router-link>
-      <router-link class=" font-MerriweatherSans text-lg border-l-black border-l-2 p-2 mb-5" to="/">Mention Légales</router-link>
+  <footer class="bg-GrisClair dark:bg-GrisFonce bg-[url('/public/LineFooter.svg')] p-10">
+    <nav class="grid font-MerriweatherSans text-lg dark:text-white">
+      <router-link class="border-l-black dark:border-l-white border-l-2 p-2 mb-5" to="/connexion">Connexion</router-link>
+      <router-link class="border-l-black dark:border-l-white border-l-2 p-2 mb-5" to="/modeles">Nos modèles</router-link>
+      <router-link class="border-l-black dark:border-l-white border-l-2 p-2 mb-5" to="/">Personnaliser</router-link>
+      <router-link class="border-l-black dark:border-l-white border-l-2 p-2 mb-5" to="/enregistrer">Mes enregistrements</router-link>
+      <router-link class="border-l-black dark:border-l-white border-l-2 p-2 mb-5" to="/">Mon compte</router-link>
+      <router-link class="border-l-black dark:border-l-white border-l-2 p-2 mb-5" to="/">Mention Légales</router-link>
       <div>
-        <router-link class=" font-MerriweatherSans text-lg border-l-black border-l-2 p-2 mb-5" to="/">CGU
+        <router-link class="border-l-black dark:border-l-white border-l-2 p-2 mb-5" to="/">CGU
         </router-link>
-        <router-link class=" font-MerriweatherSans text-lg border-l-black border-l-2 p-2 mb-5" to="/">CGV
+        <router-link class="border-l-black dark:border-l-white border-l-2 p-2 mb-5" to="/">CGV
         </router-link>
       </div>
     </nav>
     <div>
-      <h2 class="text-center font-Merriweather text-6xl font-bold">TiK•TaK</h2>
+      <h2 class="text-center font-Merriweather text-6xl font-bold dark:text-white">TiK•TaK</h2>
     </div>
   </footer>
   </div>
@@ -89,7 +93,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: rgb(0, 0, 0);
   -webkit-transition: .4s;
   transition: .4s;
 
@@ -108,7 +112,7 @@ export default {
 }
 
 input:checked+.slider {
-  background-color: #222;
+  background-color: #FFF;
 }
 
 input:focus+.slider {
