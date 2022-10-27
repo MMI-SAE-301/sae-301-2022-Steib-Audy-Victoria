@@ -26,7 +26,8 @@ const user = supabase.auth.user()
       </div>
     </div>
     <div class="flex justify-center">
-      <BtnPersonnalisation></BtnPersonnalisation>
+      <router-link to="/montrecarree/personnaliser">
+      <BtnPersonnalisation></BtnPersonnalisation></router-link>
     </div>
   </section>
 

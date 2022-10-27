@@ -3,7 +3,7 @@
 </script>
 <template>
     <section class="grid grid-cols-2">
-        <router-link to="/">
+        <router-link to="/montrecarree/personnaliser">
             <div class="bg-gradient-to-t from-Bordeaux to-transparent rounded-lg m-2">
                 <div class="bg-gradient-to-b from-white to-transparent rounded-lg  flex flex-col ">
                     <div class="flex justify-center">
@@ -14,7 +14,7 @@
                 </div>
             </div>
         </router-link>
-        <router-link to="/">
+        <router-link to="/montreronde/personnaliser">
             <div class="bg-gradient-to-t from-Bordeaux to-transparent rounded-lg  m-2">
                 <div class="bg-gradient-to-b from-white to-transparent rounded-lg  flex flex-col">
                     <div class="flex justify-center">
