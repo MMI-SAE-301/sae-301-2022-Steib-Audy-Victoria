@@ -23,7 +23,7 @@ if (props.id) {
     let { data, error } = await supabase
         .from("Montre")
         .select("*")
-        .eq("Id", props.id);
+        .eq("id", props.id);
     if (error || !data)
         console.log("n'a pas pu charger le table Montre :", error);
     else montre.value = data[0];
@@ -35,7 +35,7 @@ async function upsertMontre(dataForm, node) {
     if (error || !data) node.setErrors([error?.message]);
     else {
         node.setErrors([]);
-        router.push({ name: "montrecarree-id", params: { id: data[0].id } });
+        router.push({ name: "montrecarree-edit-id", params: { id: data[0].id } });
     }
 }
 </script>
