@@ -40,7 +40,7 @@ async function upsertMontre(dataForm, node) {
 }
 </script>
 <template>
-        <section class="grid grid-cols-2">
+        <section class="grid grid-cols-1 lg:grid-cols-2">
             <div class="w-full">
                 <FormKit class="w-full" type="form" v-model="montre" @submit="upsertMontre" submit-label="ENREGISTER" :submit-attrs="{ classes: { input: 'border border-Rouge p-2 rounded-lg font-MerriweatherSans text-2xl m-2 flex justify-center dark:text-white'}}">
                     <FormKitListColors  name="bracelet" label="Couleur du bracelet" />

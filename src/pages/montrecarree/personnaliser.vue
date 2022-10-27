@@ -6,7 +6,7 @@ import FormMontre from '@/components/FormMontreC.vue';
     <FormMontre></FormMontre>
     <div class="my-12 dark:text-white">
         <h3 >FRÉQUEMMENT ACHETER AVEC :</h3>
-        <div class="grid grid-cols-3">
+        <div class="grid  grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
             <div class="flex flex-col justify-center items-center">
                 <img src="/public/fa1.png" alt="Coque et protection d’écran total en silicone pour montre carré">
                 <p>Coque - Protection d’écran total silicone</p>

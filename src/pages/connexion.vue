@@ -11,7 +11,7 @@ import { supabase, user } from '../supabase';
                     Se déconnecter ({{user.email}})
                 </button>
     </div>
-    <div v-else class="flex justify-evenly my-20  dark:text-white ">
+    <div v-else class="grid grid-cols-1 md:flex md:justify-evenly my-20  dark:text-white ">
         <div>
             <div class="my-2 flex flex-col">
                 <label for="email">ADRESSE EMAIL :</label>
