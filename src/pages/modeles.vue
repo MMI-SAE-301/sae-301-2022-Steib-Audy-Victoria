@@ -2,7 +2,7 @@
 
 </script>
 <template>
-    <section class="grid grid-cols-2">
+    <section class="grid grid-cols-2 dark:bg-black">
         <router-link to="/montrecarree/personnaliser">
             <div class="bg-gradient-to-t from-Bordeaux to-transparent rounded-lg m-2">
                 <div class="bg-gradient-to-b from-white to-transparent rounded-lg  flex flex-col ">
