@@ -36,7 +36,7 @@ const user = supabase.auth.user()
     <div class="flex justify-around">
       <ChevronLeftIcon class="w-10 text-white"></ChevronLeftIcon>
       <div>
-        <ListeMontre class="flex flex-wrap gap-2" :max="2" />
+        <ListeMontre class="flex flex-wrap gap-4" :max="2" />
       </div>
       <ChevronRightIcon class="w-10 text-white"></ChevronRightIcon>
     </div>
