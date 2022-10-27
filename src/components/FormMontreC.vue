@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Montre } from '@/types';
-import { colors } from '@/types';
+import { colors, matBoitier, matBracelet } from '@/types';
 import { ref } from 'vue';
 import { supabase } from "@/supabase";
 
@@ -41,10 +41,12 @@ async function upsertMontre(dataForm, node) {
 </script>
 <template>
         <section class="grid grid-cols-2">
-            <div>
-                <FormKit type="form" v-model="montre" @submit="upsertMontre">
-                    <FormKitListColors name="bracelet" label="Bracelet" />
-                    <FormKitListColors name="boitier" label="Boitier" />
+            <div class="w-full">
+                <FormKit class="w-full" type="form" v-model="montre" @submit="upsertMontre" submit-label="ENREGISTER" :submit-attrs="{ classes: { input: 'border border-Rouge p-2 rounded-lg font-MerriweatherSans text-2xl m-2 flex justify-center'}}">
+                    <FormKitListColors  name="bracelet" label="Couleur du bracelet" />
+                    <FormKit name="id_mat_bracelet" label="Matériaux du Bracelet" type="select" :options="matBracelet" label-class="font-MerriweatherSans text-xl font-thin "/>
+                    <FormKitListColors name="boitier" label="Couleur du boitier" />
+                    <FormKit name="id_mat_boitier" label="Matériaux du Boitier" type="select" :options="matBoitier" label-class="font-MerriweatherSans text-xl font-thin "/>
                     <FormKitListColors name="ecran" label="Couleur de fond de l'écran" />
                     <FormKitListColors name="texte" label="Couleur du texte" />
 
