@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import FormMontre from '@/components/FormMontreC.vue';
+import FormMontre from '@/components/FormMontreR.vue';
 </script>
 <template>
     <FormMontre></FormMontre>

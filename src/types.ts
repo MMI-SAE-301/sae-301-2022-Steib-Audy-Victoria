@@ -7,18 +7,25 @@ export interface Montre {
 }
 
 export const colors = {
-  "#000000": "Noir",
   "#FFFFFF": "Blanc",
+  "#000000": "Noir",
   "#FF0000": "Rouge",
-  "#00FF00": "Vert",
-  "#0000FF": "Bleu",
+  "#FF7A00": "Orange",
+  "#FFA800": "Orange clair",
   "#FFFF00": "Jaune",
-  "#FF00FF": "Magenta",
-  "#00FFFF": "Cyan",
-  "#C0C0C0": "Gris clair",
-  "#808080": "Gris",
-  "#800000": "Marron",
-  "#808000": "Olive",
+  "#8FFF00": "Vert",
+  "#00FF47": "Vert flash",
+  "#00FFA3": "Vert bleu",
+  "#00FFF0": "Cyan",
+  "#00A3FF": "Bleu",
+  "#0029FF": "Bleu foncé",
+  "#5200FF": "Violet",
+  "#9E00FF": "Magenta",
+  "#FF00F5": "Rose",
+  "#FF005C": "Rose rouge",
+  "#E0E0E0": "Gris clair",
+  "#ACACAC": "Gris",
+  "#636363": "Gris foncé",
 };
 
 export const matBoitier = [
