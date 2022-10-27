@@ -18,7 +18,7 @@
       <!--Fin du bouton darkmode-->
       <div class="dark:text-white">
         <router-link class="mx-5 font-MerriweatherSans text-2xl" to="/modeles">Nos modèles</router-link>
-        <router-link class="mx-5 font-MerriweatherSans text-2xl" to="/personnaliser">Personnaliser</router-link>
+        <router-link class="mx-5 font-MerriweatherSans text-2xl" to="/montrecarree/personnaliser">Personnaliser</router-link>
         <router-link class="mx-5 font-MerriweatherSans text-2xl border border-black dark:border-white rounded-md p-2" to="/connexion">Connexion</router-link>
       </div>
     </nav>
@@ -39,7 +39,7 @@
     <nav class="grid font-MerriweatherSans text-lg dark:text-white">
       <router-link class="border-l-black dark:border-l-white border-l-2 p-2 mb-5" to="/connexion">Connexion</router-link>
       <router-link class="border-l-black dark:border-l-white border-l-2 p-2 mb-5" to="/modeles">Nos modèles</router-link>
-      <router-link class="border-l-black dark:border-l-white border-l-2 p-2 mb-5" to="/">Personnaliser</router-link>
+      <router-link class="border-l-black dark:border-l-white border-l-2 p-2 mb-5" to="/montrecarree/personnaliser">Personnaliser</router-link>
       <router-link class="border-l-black dark:border-l-white border-l-2 p-2 mb-5" to="/enregistrer">Mes enregistrements</router-link>
       <router-link class="border-l-black dark:border-l-white border-l-2 p-2 mb-5" to="/">Mon compte</router-link>
       <router-link class="border-l-black dark:border-l-white border-l-2 p-2 mb-5" to="/">Mention Légales</router-link>
