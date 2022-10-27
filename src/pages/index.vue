@@ -7,9 +7,10 @@ import { supabase } from "@/supabase";
 const user = supabase.auth.user()
 </script>
 <template>
+  <div class="dark:bg-black">
   <!-- Section 1 -->
   <section>
-    <div class="grid grid-cols-2">
+    <div class="grid grid-cols-1 md:grid-cols-2 dark:text-white">
       <div class="flex flex-col place-content-center m-4">
         <h3 class="font-MerriweatherSans text-xl text-center mb-8">Grâce à <span class="font-Merriweather font-bold">TiK•TaK</span> personnaliser votre montre connectée !</h3>
         <p >
@@ -32,7 +33,7 @@ const user = supabase.auth.user()
   </section>
 
   <!-- Section 2 -->
-  <section v-if="user" class="bg-GrisMoyen py-4">
+  <section v-if="user" class="bg-GrisMoyen dark:bg-GrisFonce py-4">
     <h4 class="text-white font-MerriweatherSans text-center text-lg">Vos personnalisation</h4>
     <div class="flex justify-around">
       <ChevronLeftIcon class="w-10 text-white"></ChevronLeftIcon>
@@ -41,12 +42,12 @@ const user = supabase.auth.user()
       </div>
       <ChevronRightIcon class="w-10 text-white"></ChevronRightIcon>
     </div>
-    <a class="text-white text-center underline text-lg" href=""><p>Voir plus de mes personnalisations</p></a>
+    <router-link class="text-white text-center underline text-lg" to="/enregistrer"><p>Voir plus de mes personnalisations</p></router-link>
   </section>
 
   <!-- Section 3 -->
   <section>
-    <div class="grid grid-cols-2">
+    <div class="grid grid-cols-1 md:grid-cols-2 dark:text-white">
       <div>
         <img src="/public/MontreBeige.webp" alt="Montre">
       </div>
@@ -59,4 +60,5 @@ const user = supabase.auth.user()
       </div>
     </div>
   </section>
+  </div>
 </template>
